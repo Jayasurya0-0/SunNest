@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SunNest Products - Sustainable Solar Heated Solutions</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E8891D',
+                        secondary: '#8dd3c7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 relative z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center"><img style="width: 50px;height: 50px;" src="/Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900 ">SunNest</div>
+                    
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-primary font-medium transition-colors">Home</a>
+                    
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                     <a href="Login.html" class="text-gray-700 hover:text-primary transition-colors">Login</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <input type="text" placeholder="Search products..."
+                            class="pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-64">
+                        <div
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center">
+                            <i class="ri-search-line text-gray-400 text-sm"></i>
+                        </div>
+                    </div>
+                    <a href="cart.html"
+                        data-readdy="true" class="relative p-2 text-primary">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-shopping-cart-line text-xl"></i>
+                        </div>
+                        <span
+                            class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative h-screen flex items-center justify-center overflow-hidden"
+        style="background-image: url('https://readdy.ai/api/search-image?query=outdoor%20camping%20scene%20with%20solar%20heated%20blankets%20and%20sustainable%20energy%20equipment%20in%20beautiful%20mountain%20landscape%20during%20golden%20hour%2C%20modern%20eco-friendly%20camping%20gear%20setup%20with%20warm%20ambient%20lighting%2C%20left%20side%20has%20soft%20gradient%20overlay%20for%20text%20placement%2C%20professional%20lifestyle%20photography%20with%20natural%20colors%20and%20peaceful%20atmosphere&width=1920&height=1080&seq=hero-bg1&orientation=landscape'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl">
+                <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                    Sustainable Warmth<br>
+                    <span class="text-primary">Powered by the Sun</span>
+                </h1>
+                <p class="text-xl text-gray-700 mb-8 leading-relaxed">
+                    Experience the future of outdoor comfort with our innovative solar-heated products. Stay warm, stay
+                    connected, and stay sustainable on every adventure.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#"
+                        data-readdy="true"
+                        class="bg-primary text-white px-8 py-4 rounded-button font-semibold text-lg hover:bg-blue-600 transition-colors whitespace-nowrap text-center">
+                        Explore Products
+                    </a>
+                    <button
+                        class="border-2 border-primary text-primary px-8 py-4 rounded-button font-semibold text-lg hover:bg-primary hover:text-white transition-colors whitespace-nowrap">
+                        Learn More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Featured Product Categories</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Discover our range of solar-powered heating solutions
+                    designed for every adventure and comfort need</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div
+                    class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=premium%20solar%20heated%20blanket%20in%20elegant%20navy%20blue%20color%20folded%20neatly%20on%20modern%20wooden%20surface%2C%20minimalist%20product%20photography%20with%20soft%20natural%20lighting%20and%20clean%20white%20background%2C%20sustainable%20outdoor%20gear%20with%20premium%20quality%20materials&width=300&height=300&seq=cat-blankets1&orientation=squarish"
+                            alt="Solar Heated Blankets"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Solar Heated Blankets</h3>
+                        <p class="text-gray-600 mb-4">Ultra-soft blankets with integrated solar heating technology for
+                            ultimate comfort</p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span class="mr-2">Shop Now</span>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=complete%20adventure%20camping%20kit%20with%20solar%20power%20bank%20heated%20blanket%20and%20outdoor%20accessories%20arranged%20on%20rustic%20wooden%20table%2C%20professional%20product%20photography%20with%20natural%20lighting%20and%20mountain%20adventure%20theme%2C%20premium%20sustainable%20outdoor%20gear&width=300&height=300&seq=cat-adventure1&orientation=squarish"
+                            alt="Adventure Packs"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Adventure Packs</h3>
+                        <p class="text-gray-600 mb-4">Complete off-grid solutions combining heating and power for
+                            extended adventures</p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span class="mr-2">Shop Now</span>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=modern%20camping%20gear%20collection%20with%20solar%20heated%20sleeping%20bags%20and%20portable%20heaters%20displayed%20in%20outdoor%20setting%2C%20professional%20lifestyle%20photography%20with%20warm%20golden%20hour%20lighting%20and%20mountain%20camping%20background%2C%20sustainable%20outdoor%20equipment&width=300&height=300&seq=cat-camping1&orientation=squarish"
+                            alt="Camping Gear"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Camping Gear</h3>
+                        <p class="text-gray-600 mb-4">Essential camping equipment enhanced with solar heating
+                            capabilities</p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span class="mr-2">Shop Now</span>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer">
+                    <div class="aspect-square overflow-hidden">
+                        <img src="https://readdy.ai/api/search-image?query=elegant%20home%20comfort%20products%20with%20solar%20heated%20throw%20blankets%20and%20cushions%20arranged%20in%20modern%20living%20room%20setting%2C%20cozy%20interior%20design%20with%20natural%20lighting%20and%20minimalist%20decor%2C%20sustainable%20home%20heating%20solutions&width=300&height=300&seq=cat-home1&orientation=squarish"
+                            alt="Home Comfort"
+                            class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Home Comfort</h3>
+                        <p class="text-gray-600 mb-4">Bring sustainable warmth to your home with our indoor heating
+                            solutions</p>
+                        <div class="flex items-center text-primary font-medium">
+                            <span class="mr-2">Shop Now</span>
+                            <div class="w-4 h-4 flex items-center justify-center">
+                                <i class="ri-arrow-right-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 text-white">
+                    <h3 class="text-3xl font-bold mb-4">Winter Sale</h3>
+                    <p class="text-xl mb-6 opacity-90">Save up to 30% on all solar heated blankets and adventure packs
+                    </p>
+                    <div class="flex items-center mb-6">
+                        <span class="text-4xl font-bold mr-4">30%</span>
+                        <span class="text-lg">OFF</span>
+                    </div>
+                    <button
+                        class="bg-white text-primary px-8 py-3 rounded-button font-semibold hover:bg-gray-100 transition-colors whitespace-nowrap">
+                        Shop Winter Sale
+                    </button>
+                </div>
+                <div class="bg-orange-100 rounded-2xl p-8">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">New Launch</h3>
+                    <p class="text-xl text-gray-700 mb-6">Introducing the SunNest Pro Series with advanced temperature
+                        control</p>
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center mr-4">
+                            <div class="w-6 h-6 flex items-center justify-center">
+                                <i class="ri-fire-line text-white text-xl"></i>
+                            </div>
+                        </div>
+                        <span class="text-lg font-medium text-gray-900">Advanced Heating Technology</span>
+                    </div>
+                    <button
+                        class="bg-orange-500 text-white px-8 py-3 rounded-button font-semibold hover:bg-orange-600 transition-colors whitespace-nowrap">
+                        Discover Pro Series
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600">Real experiences from adventurers who trust SunNest products</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8">
+                    <div class="flex items-center mb-4">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20smiling%20woman%20in%20her%2030s%20with%20outdoor%20adventure%20clothing%2C%20natural%20lighting%20portrait%20photography%20with%20clean%20background%2C%20confident%20and%20friendly%20expression%2C%20modern%20lifestyle%20portrait&width=80&height=80&seq=testimonial1&orientation=squarish"
+                            alt="Sarah Mitchell" class="w-12 h-12 rounded-full object-cover object-top mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Sarah Mitchell</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"The solar heated blanket was a game-changer for our mountain
+                        camping trip. Even in freezing temperatures, we stayed perfectly warm throughout the night. The
+                        quality is exceptional!"</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8">
+                    <div class="flex items-center mb-4">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20smiling%20man%20in%20his%2040s%20wearing%20outdoor%20gear%2C%20natural%20lighting%20portrait%20photography%20with%20clean%20background%2C%20experienced%20adventurer%20look%2C%20confident%20and%20trustworthy%20expression&width=80&height=80&seq=testimonial2&orientation=squarish"
+                            alt="David Chen" class="w-12 h-12 rounded-full object-cover object-top mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">David Chen</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"As a frequent traveler, the Adventure Pack has become my essential
+                        companion. The combination of heating and power bank functionality is brilliant. Highly
+                        recommend!"</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8">
+                    <div class="flex items-center mb-4">
+                        <img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20smiling%20young%20woman%20in%20her%2020s%20with%20casual%20outdoor%20style%2C%20natural%20lighting%20portrait%20photography%20with%20clean%20background%2C%20enthusiastic%20and%20energetic%20expression%2C%20modern%20lifestyle%20portrait&width=80&height=80&seq=testimonial3&orientation=squarish"
+                            alt="Emma Rodriguez" class="w-12 h-12 rounded-full object-cover object-top mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Emma Rodriguez</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Love using the solar blanket at home too! It's eco-friendly,
+                        cost-effective, and incredibly comfortable. The technology is impressive and the design is
+                        beautiful."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why Choose SunNest</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Leading the way in sustainable heating technology
+                    with innovative solutions that care for both you and the planet</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div
+                        class="w-20 h-20 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-sun-line text-primary text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">100% Solar Powered</h3>
+                    <p class="text-gray-600">Harness the power of the sun for unlimited, sustainable warmth without any
+                        electricity costs</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-20 h-20 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-leaf-line text-secondary text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Eco-Friendly Materials</h3>
+                    <p class="text-gray-600">Made from recycled and sustainable materials, reducing environmental impact
+                        while maintaining quality</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-award-line text-orange-500 text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Award-Winning Design</h3>
+                    <p class="text-gray-600">Recognized globally for innovation in sustainable technology and
+                        exceptional product design</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-battery-charge-line text-green-600 text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Long-Lasting Battery</h3>
+                    <p class="text-gray-600">Advanced battery technology provides up to 12 hours of continuous warmth on
+                        a single charge</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-smartphone-line text-purple-600 text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Smart Controls</h3>
+                    <p class="text-gray-600">Bluetooth-enabled temperature control through our mobile app for
+                        personalized comfort</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <div class="w-10 h-10 flex items-center justify-center">
+                            <i class="ri-global-line text-red-500 text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-4">Global Community</h3>
+                    <p class="text-gray-600">Join thousands of adventurers worldwide who trust SunNest for their outdoor
+                        heating needs</p>
+                </div>
+            </div>
+            <div class="text-center mt-16">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-primary mb-2">50K+</div>
+                        <p class="text-gray-600">Happy Customers</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-secondary mb-2">95%</div>
+                        <p class="text-gray-600">Customer Satisfaction</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-orange-500 mb-2">2M+</div>
+                        <p class="text-gray-600">Hours of Warmth Provided</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2">80%</div>
+                        <p class="text-gray-600">Energy Savings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Ready to Experience Sustainable Warmth?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Join the solar revolution and discover how SunNest
+                products can transform your outdoor adventures and daily comfort</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#"
+                    data-readdy="true"
+                    class="bg-white text-primary px-8 py-4 rounded-button font-semibold text-lg hover:bg-gray-100 transition-colors whitespace-nowrap">
+                    Shop Now
+                </a>
+                <button
+                    class="border-2 border-white text-white px-8 py-4 rounded-button font-semibold text-lg hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                    Download Catalog
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-truck-line text-primary text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Free Shipping</h3>
+                    <p class="text-gray-600 text-sm">Across all of India with fast and secure delivery</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-shield-check-line text-secondary text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">1-Year Warranty</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive coverage for peace of mind</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-secure-payment-line text-orange-500 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Secure Payments</h3>
+                    <p class="text-gray-600 text-sm">UPI, cards, and digital wallets accepted</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-recycle-line text-green-600 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Sustainable Materials</h3>
+                    <p class="text-gray-600 text-sm">Made from recycled and eco-friendly components</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                     <div class="flex items-center"><img style="width: 50px;height: 50px;" src="/Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900 ">SunNest</div>
+                    
+                </div>
+                    <p class="text-gray-400 text-sm">Sustainable warmth solutions powered by solar energy for
+                        adventurers and eco-conscious individuals.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Warranty</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">We Accept</h4>
+                    <div class="flex space-x-3">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-visa-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 SunNest. All rights reserved. Built with sustainable
+                    practices in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

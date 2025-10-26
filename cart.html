@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - SunNest Products</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E8891D',
+                        secondary: '#8dd3c7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+     <header class="bg-white shadow-sm border-b border-gray-100 relative z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center"><img style="width: 50px;height: 50px;" src="/Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900 ">SunNest</div>
+                    
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-primary font-medium transition-colors">Home</a>
+            
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                     <a href="Login.html" class="text-gray-700 hover:text-primary transition-colors">Login</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <input type="text" placeholder="Search products..."
+                            class="pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-64">
+                        <div
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center">
+                            <i class="ri-search-line text-gray-400 text-sm"></i>
+                        </div>
+                    </div>
+                    <a href="cart.html"
+                        data-readdy="true" class="relative p-2 text-primary">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-shopping-cart-line text-xl"></i>
+                        </div>
+                        <span
+                            class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-gray-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center space-x-2 text-sm text-gray-500 mb-4">
+                <a href="index.html"
+                    data-readdy="true" class="hover:text-primary transition-colors">Home</a>
+                <div class="w-4 h-4 flex items-center justify-center">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+                <span class="text-gray-900">Cart</span>
+            </nav>
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">Shopping Cart</h1>
+            <p class="text-lg text-gray-600">Review your items and proceed to checkout when ready.</p>
+        </div>
+    </section>
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12">
+                <div class="lg:col-span-8">
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6 mb-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-xl font-semibold text-gray-900">Cart Items (2)</h2>
+                            <a href="index.html"
+                                data-readdy="true" class="text-primary hover:text-blue-600 text-sm font-medium">Continue
+                                Shopping</a>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4 p-4 border border-gray-100 rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=cozy%20solar%20heated%20blanket%20in%20forest%20green%20color%20being%20used%20outdoors%20during%20camping%20with%20mountain%20scenery%20in%20background%2C%20modern%20sustainable%20design%2C%20clean%20minimalist%20product%20photography%20with%20natural%20lighting%20and%20soft%20shadows&width=120&height=120&seq=cart-blanket1&orientation=squarish"
+                                    alt="SunNest Solar Heated Blanket"
+                                    class="w-24 h-24 object-cover object-top rounded-lg">
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-2">SunNest Solar Heated Blanket
+                                    </h3>
+                                    <div class="text-sm text-gray-600 mb-2">
+                                        <span class="inline-block mr-4">Color: Forest Green</span>
+                                        <span class="inline-block">Size: Regular</span>
+                                    </div>
+                                    <div class="text-lg font-bold text-primary mb-3">₹16,499</div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-sm text-gray-700">Quantity:</span>
+                                            <div class="flex items-center border border-gray-200 rounded-lg">
+                                                <button
+                                                    class="quantity-decrease px-3 py-1 text-gray-600 hover:text-gray-800"
+                                                    data-item="blanket">
+                                                    <div class="w-4 h-4 flex items-center justify-center">
+                                                        <i class="ri-subtract-line"></i>
+                                                    </div>
+                                                </button>
+                                                <span
+                                                    class="quantity-value px-4 py-1 border-l border-r border-gray-200 text-sm"
+                                                    data-item="blanket">1</span>
+                                                <button
+                                                    class="quantity-increase px-3 py-1 text-gray-600 hover:text-gray-800"
+                                                    data-item="blanket">
+                                                    <div class="w-4 h-4 flex items-center justify-center">
+                                                        <i class="ri-add-line"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="remove-item text-red-500 hover:text-red-700 text-sm font-medium"
+                                            data-item="blanket">
+                                            <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                            Remove
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4 p-4 border border-gray-100 rounded-lg">
+                                <img src="https://readdy.ai/api/search-image?query=adventure%20camping%20kit%20with%20solar%20heated%20blanket%20and%20power%20bank%20displayed%20together%20on%20wooden%20surface%2C%20outdoor%20gear%20setup%20with%20mountain%20camping%20background%2C%20premium%20sustainable%20products%20with%20clean%20modern%20design%20and%20natural%20lighting&width=120&height=120&seq=cart-adventure1&orientation=squarish"
+                                    alt="SunNest Adventure Pack" class="w-24 h-24 object-cover object-top rounded-lg">
+                                <div class="flex-1">
+                                    <h3 class="text-lg font-semibold text-gray-900 mb-2">SunNest Adventure Pack</h3>
+                                    <div class="text-sm text-gray-600 mb-2">Complete off-grid solution</div>
+                                    <div class="text-lg font-bold text-primary mb-3">₹20,999</div>
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center space-x-3">
+                                            <span class="text-sm text-gray-700">Quantity:</span>
+                                            <div class="flex items-center border border-gray-200 rounded-lg">
+                                                <button
+                                                    class="quantity-decrease px-3 py-1 text-gray-600 hover:text-gray-800"
+                                                    data-item="adventure">
+                                                    <div class="w-4 h-4 flex items-center justify-center">
+                                                        <i class="ri-subtract-line"></i>
+                                                    </div>
+                                                </button>
+                                                <span
+                                                    class="quantity-value px-4 py-1 border-l border-r border-gray-200 text-sm"
+                                                    data-item="adventure">1</span>
+                                                <button
+                                                    class="quantity-increase px-3 py-1 text-gray-600 hover:text-gray-800"
+                                                    data-item="adventure">
+                                                    <div class="w-4 h-4 flex items-center justify-center">
+                                                        <i class="ri-add-line"></i>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <button class="remove-item text-red-500 hover:text-red-700 text-sm font-medium"
+                                            data-item="adventure">
+                                            <div class="w-4 h-4 flex items-center justify-center mr-1">
+                                                <i class="ri-delete-bin-line"></i>
+                                            </div>
+                                            Remove
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Apply Discount Code</h3>
+                        <div class="flex gap-3">
+                            <input type="text" placeholder="Enter discount code"
+                                class="flex-1 px-4 py-3 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                            <button
+                                class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-blue-600 transition-colors whitespace-nowrap">Apply</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 mt-8 lg:mt-0">
+                    <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6 sticky top-8">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-6">Order Summary</h3>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Subtotal (2 items)</span>
+                                <span class="subtotal-amount text-gray-900 font-medium">₹37,498</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Shipping</span>
+                                <span class="text-green-600 font-medium">Free</span>
+                            </div>
+                            <div class="flex justify-between text-sm">
+                                <span class="text-gray-600">Tax (GST 18%)</span>
+                                <span class="tax-amount text-gray-900">₹6,750</span>
+                            </div>
+                            <div class="border-t border-gray-200 pt-4">
+                                <div class="flex justify-between">
+                                    <span class="text-lg font-semibold text-gray-900">Total</span>
+                                    <span class="total-amount text-xl font-bold text-primary">₹44,248</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-green-600 mb-2">
+                                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                    <i class="ri-truck-line"></i>
+                                </div>
+                                Free shipping on orders over ₹15,000
+                            </div>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <div class="w-4 h-4 flex items-center justify-center mr-2">
+                                    <i class="ri-time-line"></i>
+                                </div>
+                                Estimated delivery: 3-5 business days
+                            </div>
+                        </div>
+                        <button
+                            class="w-full bg-primary text-white py-4 px-6 rounded-button font-semibold text-lg hover:bg-blue-600 transition-colors whitespace-nowrap mb-4">
+                            Proceed to Checkout
+                        </button>
+                        <div class="text-center">
+                            <div class="flex items-center justify-center space-x-2 text-sm text-gray-600">
+                                <div class="w-4 h-4 flex items-center justify-center">
+                                    <i class="ri-shield-check-line text-green-600"></i>
+                                </div>
+                                <span>Secure checkout with SSL encryption</span>
+                            </div>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-gray-200">
+                            <h4 class="font-medium text-gray-900 mb-3">We Accept</h4>
+                            <div class="flex space-x-3">
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-visa-fill text-2xl text-gray-400"></i>
+                                </div>
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+                                </div>
+                                <div class="w-8 h-8 flex items-center justify-center">
+                                    <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-truck-line text-primary text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Free Shipping</h3>
+                    <p class="text-gray-600 text-sm">Across all of India with fast and secure delivery</p>
+                </div>
+                <div class="text-center">
+                    <div
+                        class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-shield-check-line text-secondary text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">1-Year Warranty</h3>
+                    <p class="text-gray-600 text-sm">Comprehensive coverage for peace of mind</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-secure-payment-line text-orange-500 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Secure Payments</h3>
+                    <p class="text-gray-600 text-sm">UPI, cards, and digital wallets accepted</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-recycle-line text-green-600 text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">Sustainable Materials</h3>
+                    <p class="text-gray-600 text-sm">Made from recycled and eco-friendly components</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                   <div class="flex items-center"><img style="width: 50px;height: 50px;" src="/Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900 ">SunNest</div>
+                    
+                </div>
+                    <p class="text-gray-400 text-sm">Sustainable warmth solutions powered by solar energy for
+                        adventurers and eco-conscious individuals.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html"
+                                data-readdy="true" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                        </li>
+                        
+                        </li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Warranty</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">We Accept</h4>
+                    <div class="flex space-x-3">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-visa-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 SunNest. All rights reserved. Built with sustainable
+                    practices in mind.</p>
+            </div>
+        </div>
+    </footer>
+    <script id="quantity-controls">
+        document.addEventListener('DOMContentLoaded', function () {
+            const prices = {
+                blanket: 16499,
+                adventure: 20999
+            };
+            function updateTotals() {
+                let subtotal = 0;
+                Object.keys(prices).forEach(item => {
+                    const quantityElement = document.querySelector(`[data-item="${item}"].quantity-value`);
+                    if (quantityElement) {
+                        const quantity = parseInt(quantityElement.textContent);
+                        subtotal += prices[item] * quantity;
+                    }
+                });
+                const tax = Math.round(subtotal * 0.18);
+                const total = subtotal + tax;
+                document.querySelector('.subtotal-amount').textContent = `₹${subtotal.toLocaleString()}`;
+                document.querySelector('.tax-amount').textContent = `₹${tax.toLocaleString()}`;
+                document.querySelector('.total-amount').textContent = `₹${total.toLocaleString()}`;
+                const cartCounter = document.querySelector('span.bg-primary');
+                const totalItems = Object.keys(prices).reduce((sum, item) => {
+                    const quantityElement = document.querySelector(`[data-item="${item}"].quantity-value`);
+                    return sum + (quantityElement ? parseInt(quantityElement.textContent) : 0);
+                }, 0);
+                cartCounter.textContent = totalItems;
+            }
+            document.querySelectorAll('.quantity-increase').forEach(button => {
+                button.addEventListener('click', function () {
+                    const item = this.dataset.item;
+                    const quantityElement = document.querySelector(`[data-item="${item}"].quantity-value`);
+                    const currentQuantity = parseInt(quantityElement.textContent);
+                    quantityElement.textContent = currentQuantity + 1;
+                    updateTotals();
+                });
+            });
+            document.querySelectorAll('.quantity-decrease').forEach(button => {
+                button.addEventListener('click', function () {
+                    const item = this.dataset.item;
+                    const quantityElement = document.querySelector(`[data-item="${item}"].quantity-value`);
+                    const currentQuantity = parseInt(quantityElement.textContent);
+                    if (currentQuantity > 1) {
+                        quantityElement.textContent = currentQuantity - 1;
+                        updateTotals();
+                    }
+                });
+            });
+            updateTotals();
+        });
+    </script>
+    <script id="remove-items">
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', function () {
+                    const item = this.dataset.item;
+                    const itemRow = this.closest('.flex.items-start');
+                    if (confirm('Are you sure you want to remove this item from your cart?')) {
+                        itemRow.style.opacity = '0.5';
+                        itemRow.style.transform = 'translateX(-20px)';
+                        setTimeout(() => {
+                            itemRow.remove();
+                            const remainingItems = document.querySelectorAll('.quantity-value').length;
+                            if (remainingItems === 0) {
+                                const cartContainer = document.querySelector('.lg\\:col-span-8');
+                                cartContainer.innerHTML = `
+<div class="bg-white rounded-xl shadow-lg border border-gray-100 p-12 text-center">
+<div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-shopping-cart-line text-gray-400 text-2xl"></i>
+</div>
+</div>
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Your cart is empty</h3>
+<p class="text-gray-600 mb-6">Add some products to get started</p>
+<a href="index.html" data-readdy="true" class="bg-primary text-white py-3 px-6 rounded-button font-medium hover:bg-blue-600 transition-colors whitespace-nowrap">Continue Shopping</a>
+</div>
+`;
+                                document.querySelector('.lg\\:col-span-4').style.display = 'none';
+                            } else {
+                                const cartItemsHeader = document.querySelector('h2');
+                                cartItemsHeader.textContent = `Cart Items (${remainingItems})`;
+                                const event = new Event('click');
+                                document.querySelector('.quantity-increase').dispatchEvent(event);
+                            }
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
