@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SunNest Products</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E8891D',
+                        secondary: '#8dd3c7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <header class="bg-white shadow-sm border-b border-gray-100 relative z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <img style="width: 50px;height: 50px;" src="Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900">SunNest</div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                    <a href="About.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="Contactus.html" class="text-primary font-medium transition-colors">Contact</a>
+                    <a href="login.php" class="text-gray-700 hover:text-primary transition-colors">Login</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <input type="text" placeholder="Search products..."
+                            class="pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-64">
+                        <div class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center">
+                            <i class="ri-search-line text-gray-400 text-sm"></i>
+                        </div>
+                    </div>
+                    <a href="cart.html" data-readdy="true" class="relative p-2 text-primary">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-shopping-cart-line text-xl"></i>
+                        </div>
+                        <span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden bg-gradient-to-r from-primary to-secondary">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-4">Get in Touch</h1>
+            <p class="text-xl lg:text-2xl max-w-3xl mx-auto">We're here to help with any questions about our solar heating solutions</p>
+        </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Contact Information</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Reach out to us through any of these channels</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-phone-line text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Phone</h3>
+                    <p class="text-gray-600 mb-2">Call us Mon-Fri, 9AM-6PM IST</p>
+                    <a href="tel:+911234567890" class="text-primary font-semibold text-lg hover:underline">+91 123 456 7890</a>
+                    <p class="text-gray-500 text-sm mt-2">Toll-free: 1800-123-4567</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-mail-line text-secondary text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Email</h3>
+                    <p class="text-gray-600 mb-2">We'll respond within 24 hours</p>
+                    <a href="mailto:support@sunnest.com" class="text-primary font-semibold text-lg hover:underline">support@sunnest.com</a>
+                    <p class="text-gray-500 text-sm mt-2">Sales: sales@sunnest.com</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-8 text-center hover:shadow-xl transition-shadow">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-map-pin-line text-orange-500 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Office</h3>
+                    <p class="text-gray-600 mb-2">Visit our headquarters</p>
+                    <p class="text-gray-700 font-medium">123 Solar Street, Green Park</p>
+                    <p class="text-gray-600">New Delhi, India 110016</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Send Us a Message</h2>
+                    <p class="text-lg text-gray-700 mb-8">
+                        Have a question or feedback? Fill out the form and our team will get back to you as soon as possible.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-time-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-1">Business Hours</h3>
+                                <p class="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM IST</p>
+                                <p class="text-gray-600">Saturday: 10:00 AM - 4:00 PM IST</p>
+                                <p class="text-gray-600">Sunday: Closed</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-secondary bg-opacity-10 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-customer-service-line text-secondary text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-1">Customer Support</h3>
+                                <p class="text-gray-600">Our dedicated team is ready to assist with product inquiries, orders, warranty claims, and technical support.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="ri-chat-smile-line text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-900 mb-1">Live Chat</h3>
+                                <p class="text-gray-600">Available Mon-Fri, 9AM-6PM. Click the chat icon in the bottom right corner for instant assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-xl border border-gray-100 p-8">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Full Name *</label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                placeholder="john@example.com">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-semibold text-gray-900 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+                                placeholder="+91 98765 43210">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-semibold text-gray-900 mb-2">Subject *</label>
+                            <select id="subject" name="subject" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                <option value="">Select a subject</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="order">Order Status</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="warranty">Warranty Claim</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="5" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+                                placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-primary text-white px-8 py-4 rounded-button font-semibold text-lg hover:bg-orange-600 transition-colors">
+                            Send Message
+                        </button>
+                        <p class="text-sm text-gray-500 text-center">
+                            By submitting this form, you agree to our <a href="#" class="text-primary hover:underline">Privacy Policy</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Quick answers to common questions</p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-4">
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 flex items-center">
+                        <i class="ri-question-line text-primary mr-3"></i>
+                        How do solar heated blankets work?
+                    </h3>
+                    <p class="text-gray-600 ml-9">Our blankets use advanced solar panels to convert sunlight into energy, which is stored in a built-in battery. The heating elements are activated when you need warmth, providing up to 12 hours of continuous heat.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 flex items-center">
+                        <i class="ri-question-line text-primary mr-3"></i>
+                        What is your shipping policy?
+                    </h3>
+                    <p class="text-gray-600 ml-9">We offer free shipping across India for all orders. Delivery typically takes 3-7 business days depending on your location. International shipping is available with rates calculated at checkout.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 flex items-center">
+                        <i class="ri-question-line text-primary mr-3"></i>
+                        Do you offer warranty on your products?
+                    </h3>
+                    <p class="text-gray-600 ml-9">Yes! All SunNest products come with a 1-year manufacturer warranty covering defects in materials and workmanship. Extended warranty options are available at purchase.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 flex items-center">
+                        <i class="ri-question-line text-primary mr-3"></i>
+                        Can I return a product if I'm not satisfied?
+                    </h3>
+                    <p class="text-gray-600 ml-9">We offer a 30-day return policy. If you're not completely satisfied with your purchase, you can return it for a full refund or exchange within 30 days of delivery.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6">
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2 flex items-center">
+                        <i class="ri-question-line text-primary mr-3"></i>
+                        How do I care for my solar heated products?
+                    </h3>
+                    <p class="text-gray-600 ml-9">Remove the battery pack and solar panel before washing. Machine wash on gentle cycle with cold water and air dry. Detailed care instructions are included with each product.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <p class="text-gray-700 mb-4">Can't find what you're looking for?</p>
+                <a href="#" class="text-primary font-semibold hover:underline">Visit our Help Center →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Find Us</h2>
+                <p class="text-xl text-gray-600">Visit our office or authorized retailers near you</p>
+            </div>
+            <div class="bg-gray-200 rounded-2xl overflow-hidden shadow-xl" style="height: 400px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2644874928755!2d77.21787631508041!3d28.62578948241923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b5f6a32d%3A0x3f08f62d1d88be26!2sGreen%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1638000000000!5m2!1sen!2sin"
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-gray-900 mb-4">Connect With Us</h2>
+            <p class="text-xl text-gray-600 mb-8">Follow us on social media for updates, tips, and inspiration</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                    <i class="ri-facebook-fill text-2xl"></i>
+                </a>
+                <a href="#" class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                    <i class="ri-instagram-line text-2xl"></i>
+                </a>
+                <a href="#" class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                    <i class="ri-twitter-line text-2xl"></i>
+                </a>
+                <a href="#" class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                    <i class="ri-linkedin-fill text-2xl"></i>
+                </a>
+                <a href="#" class="w-14 h-14 bg-primary rounded-full flex items-center justify-center text-white hover:bg-orange-600 transition-colors">
+                    <i class="ri-youtube-fill text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                     <div class="flex items-center"><img style="width: 50px;height: 50px;" src="Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900 ">SunNest</div>
+                    
+                </div>
+                    <p class="text-gray-400 text-sm">Sustainable warmth solutions powered by solar energy for
+                        adventurers and eco-conscious individuals.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        
+                        </li>
+                        <li><a href="About.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="Contactus.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Warranty</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">We Accept</h4>
+                    <div class="flex space-x-3">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-visa-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 SunNest. All rights reserved. Built with sustainable
+                    practices in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

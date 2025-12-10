@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SunNest Products</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E8891D',
+                        secondary: '#8dd3c7'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+     <header class="bg-white shadow-sm border-b border-gray-100 relative z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center"><img style="width: 50px;height: 50px;" src="Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900 ">SunNest</div>
+                    
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-primary font-medium transition-colors">Home</a>
+                    
+                    <a href="About.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="Contactus.html" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                     <a href="login.php" class="text-gray-700 hover:text-primary transition-colors">Login</a>
+                </nav>
+                <div class="flex items-center space-x-4">
+                    <div class="relative hidden sm:block">
+                        <input type="text" placeholder="Search products..."
+                            class="pl-10 pr-4 py-2 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-64">
+                        <div
+                            class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 flex items-center justify-center">
+                            <i class="ri-search-line text-gray-400 text-sm"></i>
+                        </div>
+                    </div>
+                    <a href="cart.html"
+                        data-readdy="true" class="relative p-2 text-primary">
+                        <div class="w-6 h-6 flex items-center justify-center">
+                            <i class="ri-shopping-cart-line text-xl"></i>
+                        </div>
+                        <span
+                            class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-96 flex items-center justify-center overflow-hidden bg-gradient-to-r from-primary to-secondary">
+        <div class="absolute inset-0 bg-black opacity-20"></div>
+        <div class="relative z-10 text-center text-white px-4">
+            <h1 class="text-5xl lg:text-6xl font-bold mb-4">About SunNest</h1>
+            <p class="text-xl lg:text-2xl max-w-3xl mx-auto">Pioneering Sustainable Warmth Through Solar Innovation</p>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Founded in 2020, SunNest was born from a simple yet powerful idea: to harness the abundant energy of the sun to provide warmth and comfort wherever you are. Our journey began when our founder, an avid mountaineer, experienced the challenges of staying warm during remote expeditions.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Combining expertise in renewable energy and textile engineering, we developed our first solar-heated blanket prototype. The overwhelming positive response from the outdoor community inspired us to expand our product line and make sustainable heating accessible to everyone.
+                    </p>
+                    <p class="text-lg text-gray-700">
+                        Today, SunNest stands at the forefront of solar heating technology, serving over 50,000 customers worldwide and continuously innovating to create products that are both environmentally responsible and exceptionally functional.
+                    </p>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="https://readdy.ai/api/search-image?query=outdoor%20camping%20scene%20with%20solar%20heated%20blankets%20and%20sustainable%20energy%20equipment%20in%20beautiful%20mountain%20landscape%20during%20golden%20hour%2C%20modern%20eco-friendly%20camping%20gear%20setup%20with%20warm%20ambient%20lighting%2C%20left%20side%20has%20soft%20gradient%20overlay%20for%20text%20placement%2C%20professional%20lifestyle%20photography%20with%20natural%20colors%20and%20peaceful%20atmosphere&width=1920&height=1080&seq=hero-bg1&orientation=landscape"
+                        alt="Our Story" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-target-line text-primary text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                    <p class="text-lg text-gray-700">
+                        To revolutionize personal heating solutions by making solar-powered warmth accessible, affordable, and sustainable for everyone. We're committed to reducing carbon footprints while enhancing comfort and convenience in daily life and outdoor adventures.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div class="w-16 h-16 bg-secondary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+                        <i class="ri-eye-line text-secondary text-3xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                    <p class="text-lg text-gray-700">
+                        To become the global leader in solar heating technology, creating a world where sustainable warmth is the norm rather than the exception. We envision a future where every individual can experience comfort without compromising the health of our planet.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Core Values</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">The principles that guide everything we do at SunNest</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-leaf-line text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Sustainability</h3>
+                    <p class="text-gray-600">Environmental responsibility is at the heart of every decision we make, from materials to manufacturing.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-lightbulb-line text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Innovation</h3>
+                    <p class="text-gray-600">We continuously push boundaries to develop cutting-edge solar heating technologies.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-medal-line text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Quality</h3>
+                    <p class="text-gray-600">Excellence in every product, ensuring durability, performance, and customer satisfaction.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-team-line text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Community</h3>
+                    <p class="text-gray-600">Building a global community of eco-conscious individuals who share our vision.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Achievements Section -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Achievements</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Milestones that mark our journey towards a sustainable future</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-primary to-orange-600 rounded-2xl p-8 text-white">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="ri-trophy-line text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">2023 Green Innovation Award</h3>
+                            <p class="text-white text-opacity-90">Recognized for breakthrough solar heating technology at the International Sustainability Summit</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-secondary to-teal-500 rounded-2xl p-8 text-white">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="ri-star-line text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Best Outdoor Product 2024</h3>
+                            <p class="text-white text-opacity-90">Adventure Gear Magazine's top pick for innovative camping equipment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl p-8 text-white">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="ri-plant-line text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Carbon Neutral Certified</h3>
+                            <p class="text-white text-opacity-90">Achieved 100% carbon neutrality in manufacturing processes since 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl p-8 text-white">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center flex-shrink-0">
+                            <i class="ri-global-line text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">50+ Countries Served</h3>
+                            <p class="text-white text-opacity-90">Expanding our global reach to bring sustainable warmth worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Our Impact in Numbers</h2>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-primary mb-2">50K+</div>
+                    <p class="text-gray-600 font-medium">Happy Customers</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-secondary mb-2">2M+</div>
+                    <p class="text-gray-600 font-medium">Hours of Warmth</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-green-600 mb-2">500T+</div>
+                    <p class="text-gray-600 font-medium">CO₂ Emissions Saved</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-orange-600 mb-2">50+</div>
+                    <p class="text-gray-600 font-medium">Countries Worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-primary py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Join the Solar Revolution</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+                Be part of our mission to create a sustainable future. Experience the warmth of solar energy today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="bg-white text-primary px-8 py-4 rounded-button font-semibold text-lg hover:bg-gray-100 transition-colors whitespace-nowrap">
+                    Explore Products
+                </a>
+                <a href="#" class="border-2 border-white text-white px-8 py-4 rounded-button font-semibold text-lg hover:bg-white hover:text-primary transition-colors whitespace-nowrap">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                     <div class="flex items-center"><img style="width: 50px;height: 50px;" src="Images/WhatsApp_Image_2025-10-17_at_10.48.28_fb6ac561-removebg-preview.png">
+                    <div style="color:rgba(248, 161, 0, 0.977) ;" class="font-[''] text-2xl text-gray-900 ">SunNest</div>
+                    
+                </div>
+                    <p class="text-gray-400 text-sm">Sustainable warmth solutions powered by solar energy for
+                        adventurers and eco-conscious individuals.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        
+                        </li>
+                        <li><a href="About.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="Contactus.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="privacy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="text-gray-400 hover:text-white transition-colors">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Shipping Info</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Returns</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Warranty</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">We Accept</h4>
+                    <div class="flex space-x-3">
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-visa-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-mastercard-fill text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="w-8 h-8 flex items-center justify-center">
+                            <i class="ri-paypal-fill text-2xl text-gray-400"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400 text-sm">&copy; 2025 SunNest. All rights reserved. Built with sustainable
+                    practices in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

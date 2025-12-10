@@ -52,9 +52,9 @@
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-gray-700 hover:text-primary transition-colors">Home</a>
                    
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">About</a>
-                    <a href="#" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
-                     <a href="Login.html" class="text-primary font-medium transition-colors">Login</a>
+                    <a href="About.html" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                    <a href="Contactus.html" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
+                     <a href="login.php" class="text-primary font-medium transition-colors">Login</a>
                 </nav>
                 <div class="flex items-center space-x-4">
                     <div class="relative hidden sm:block">
@@ -90,7 +90,11 @@
                     <h2 class="text-2xl font-bold text-gray-900 text-center mb-2">Create Account</h2>
                     <p class="text-gray-600 text-center text-sm">Join SunNest and start your solar journey</p>
                 </div>
-                <form class="space-y-6">
+                
+                <!-- Alert message div -->
+                <div id="alert-message" class="hidden mb-4 p-4 rounded-lg text-sm"></div>
+                
+                <form id="signup-form" class="space-y-6">
                     <div>
                         <label for="fullname" class="block text-sm font-medium text-gray-700 mb-2">Full Name</label>
                         <div class="relative">
@@ -195,8 +199,8 @@
         </div>
         <div class="mt-8 text-center">
             <div class="flex justify-center space-x-6 text-sm text-gray-500">
-                <a href="#" class="hover:text-gray-700 transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-gray-700 transition-colors">Terms of Service</a>
+                <a href="privacy.html" class="hover:text-gray-700 transition-colors">Privacy Policy</a>
+                <a href="terms.html" class="hover:text-gray-700 transition-colors">Terms of Service</a>
                 <a href="#" class="hover:text-gray-700 transition-colors">Help Center</a>
             </div>
             <p class="mt-4 text-xs text-gray-400">&copy; 2025 SunNest. All rights reserved.</p>
@@ -251,63 +255,124 @@
             });
         });
     </script>
-    <script id="form-validation">
+    <script id="form-submission">
         document.addEventListener('DOMContentLoaded', function () {
-            const form = document.querySelector('form');
+            const form = document.getElementById('signup-form');
             const fullnameInput = document.getElementById('fullname');
             const emailInput = document.getElementById('email');
             const passwordInput = document.getElementById('password');
             const confirmPasswordInput = document.getElementById('confirmPassword');
             const termsCheckbox = document.getElementById('terms');
+            const alertMessage = document.getElementById('alert-message');
+            
+            function showAlert(message, isSuccess) {
+                alertMessage.textContent = message;
+                alertMessage.classList.remove('hidden', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700');
+                
+                if (isSuccess) {
+                    alertMessage.classList.add('bg-green-100', 'text-green-700');
+                } else {
+                    alertMessage.classList.add('bg-red-100', 'text-red-700');
+                }
+                
+                // Scroll to alert
+                alertMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            
             form.addEventListener('submit', function (e) {
                 e.preventDefault();
                 let isValid = true;
+                
+                // Reset all field styles
+                [fullnameInput, emailInput, passwordInput, confirmPasswordInput].forEach(input => {
+                    input.classList.remove('border-red-500', 'focus:ring-red-500');
+                    input.classList.add('border-gray-300', 'focus:ring-primary');
+                });
+                
                 if (!fullnameInput.value || fullnameInput.value.trim().length < 2) {
                     fullnameInput.classList.add('border-red-500', 'focus:ring-red-500');
                     fullnameInput.classList.remove('border-gray-300', 'focus:ring-primary');
                     isValid = false;
-                } else {
-                    fullnameInput.classList.remove('border-red-500', 'focus:ring-red-500');
-                    fullnameInput.classList.add('border-gray-300', 'focus:ring-primary');
+                    showAlert('Please enter a valid name (at least 2 characters)', false);
+                    return;
                 }
+                
                 if (!emailInput.value || !emailInput.value.includes('@')) {
                     emailInput.classList.add('border-red-500', 'focus:ring-red-500');
                     emailInput.classList.remove('border-gray-300', 'focus:ring-primary');
                     isValid = false;
-                } else {
-                    emailInput.classList.remove('border-red-500', 'focus:ring-red-500');
-                    emailInput.classList.add('border-gray-300', 'focus:ring-primary');
+                    showAlert('Please enter a valid email address', false);
+                    return;
                 }
+                
                 if (!passwordInput.value || passwordInput.value.length < 8) {
                     passwordInput.classList.add('border-red-500', 'focus:ring-red-500');
                     passwordInput.classList.remove('border-gray-300', 'focus:ring-primary');
                     isValid = false;
-                } else {
-                    passwordInput.classList.remove('border-red-500', 'focus:ring-red-500');
-                    passwordInput.classList.add('border-gray-300', 'focus:ring-primary');
+                    showAlert('Password must be at least 8 characters long', false);
+                    return;
                 }
+                
                 if (!confirmPasswordInput.value || confirmPasswordInput.value !== passwordInput.value) {
                     confirmPasswordInput.classList.add('border-red-500', 'focus:ring-red-500');
                     confirmPasswordInput.classList.remove('border-gray-300', 'focus:ring-primary');
                     isValid = false;
-                } else {
-                    confirmPasswordInput.classList.remove('border-red-500', 'focus:ring-red-500');
-                    confirmPasswordInput.classList.add('border-gray-300', 'focus:ring-primary');
+                    showAlert('Passwords do not match', false);
+                    return;
                 }
+                
                 if (!termsCheckbox.checked) {
                     document.querySelector('.terms-checkbox').classList.add('border-red-500');
                     isValid = false;
+                    showAlert('Please agree to the Terms of Service', false);
+                    return;
                 } else {
                     document.querySelector('.terms-checkbox').classList.remove('border-red-500');
                 }
+                
                 if (isValid) {
                     const submitButton = form.querySelector('button[type="submit"]');
+                    const originalText = submitButton.textContent;
                     submitButton.textContent = 'Creating Account...';
                     submitButton.disabled = true;
-                    setTimeout(() => {
-                        submitButton.textContent = 'Create Account';
+                    
+                    // Create FormData object
+                    const formData = new FormData(form);
+                    
+                    // Send AJAX request
+                    fetch('register.php', {
+                        method: 'POST',
+                        body: formData
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            showAlert(data.message, true);
+                            form.reset();
+                            
+                            // Reset checkbox visual
+                            const checkboxVisual = document.querySelector('.terms-checkbox');
+                            const checkIcon = document.querySelector('.check-icon');
+                            checkboxVisual.classList.remove('border-primary', 'bg-primary');
+                            checkboxVisual.classList.add('border-gray-300');
+                            checkIcon.classList.add('hidden');
+                            
+                            // Redirect after 2 seconds
+                            setTimeout(() => {
+                                window.location.href = data.redirect;
+                            }, 2000);
+                        } else {
+                            showAlert(data.message, false);
+                        }
+                    })
+                    .catch(error => {
+                        showAlert('An error occurred. Please try again.', false);
+                        console.error('Error:', error);
+                    })
+                    .finally(() => {
+                        submitButton.textContent = originalText;
                         submitButton.disabled = false;
-                    }, 2000);
+                    });
                 }
             });
         });
